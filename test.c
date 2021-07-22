@@ -1,6 +1,8 @@
 #include "automata.h"
 
 void step(int* grid, int width, int height){
+	int grid'[width * height * 2];
+
 	for(int i = 0; i < width * height; i++){
 		grid[i] = grid[i] ? 0 : 1;
 	}

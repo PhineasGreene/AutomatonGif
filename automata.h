@@ -1,3 +1,3 @@
 #include "gifenc.h"
 
-void render(char* filename, int width, int height, void (*stepf)(int*, int, int), int (*colorf)(int), int* grid, uint8_t* palette, int depth, int frames);
+void render(char* filename, int width, int height, void (*stepf)(float*, int, int), int (*colorf)(float*, int, int, int), float* grid, uint8_t* palette, int depth, int frames);
